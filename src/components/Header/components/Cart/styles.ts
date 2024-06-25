@@ -6,13 +6,9 @@ import { IconDelete } from "../Icons/IconDelete";
 export const CartContainer = styled.div `
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     margin-inline-end: calc(0.847rem + 2.254vw);
 
-    @media screen and (max-width: ${props => props.theme.breakpoints.md}){
+    @media screen and (max-width: ${props => props.theme.breakpoints.xl}){
         position: static;
     }
 `;
@@ -30,9 +26,28 @@ export const CartIconCart = styled(IconCart) `
     height: auto;
 `;
 
+export const CartContainerBackground = styled.div `
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (max-width: ${props => props.theme.breakpoints.sm}){
+        position: absolute;
+        top: 5.625rem;
+        left: 0;
+
+        width: 100%;
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+`;
+
 export const CartContainerContent = styled.div `
     position: absolute;
     top: 3.75rem;
+
+    z-index: 1;
     
     width: 22.5rem;
 
@@ -44,11 +59,15 @@ export const CartContainerContent = styled.div `
     -moz-box-shadow: 0rem 1.625rem 2.8125rem -2rem rgba(0,0,0,0.75);
     box-shadow: 0rem 1.625rem 2.8125rem -2rem rgba(0,0,0,0.75);
 
-    @media screen and (max-width: ${props => props.theme.breakpoints.md}){
-        top: 4.625rem;
-        left: 0.5rem;
+    @media screen and (max-width: ${props => props.theme.breakpoints.xl}){
+        top: 5.625rem;
+        right: 0.5rem;
+    }
 
-        z-index: 1;
+    @media screen and (max-width: ${props => props.theme.breakpoints.sm}){
+        position: static;
+
+        width: 96%;
     }
 `;
 

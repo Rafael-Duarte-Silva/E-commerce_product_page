@@ -121,6 +121,7 @@ export const ProductContainerValues = styled.div `
 
     @media screen and (max-width: ${props => props.theme.breakpoints.md}){
         flex-direction: row;
+        flex-wrap: wrap;
 
         align-items: center;
         justify-content: space-between;
