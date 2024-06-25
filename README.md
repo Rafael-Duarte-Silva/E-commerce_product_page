@@ -1,6 +1,6 @@
 # E-commerce product page
 
-Esse projeto é um desafio de: [frontendmentor](https://www.frontendmentor.io/)
+Este projeto é um desafio de: [frontendmentor](https://www.frontendmentor.io/)
 
 ## Screenshots
 
