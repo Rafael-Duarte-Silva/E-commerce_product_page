@@ -32,7 +32,7 @@ export const CartContainerBackground = styled.div `
     
     @media screen and (max-width: ${props => props.theme.breakpoints.sm}){
         position: absolute;
-        top: 5.625rem;
+        top: 4.625rem;
         left: 0;
 
         width: 100%;
