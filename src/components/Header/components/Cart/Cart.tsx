@@ -1,7 +1,5 @@
 import * as S from './styles';
 
-import { IconDelete } from '../Icons/IconDelete';
-
 import { useCart } from './hooks/useCart';
 
 import { useDb } from '../../../../mocks/hooks/useDb';
@@ -66,7 +64,7 @@ export const Cart = () => {
                                                     type="button"
                                                     onClick={() => handleDeleteProduct(product?.id)}
                                                 >
-                                                    <IconDelete />
+                                                    <S.CartContentIconDelete />
                                                 </S.CartContentButtonDelete>
                                             </S.CartContentItem>
                                         ))}
